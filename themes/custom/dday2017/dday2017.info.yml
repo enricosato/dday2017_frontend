@@ -5,6 +5,3 @@ package: SparkFabrik
 core: 8.x
 
 base theme: classy
-
-libraries:
-  - dday2017/global-styling
