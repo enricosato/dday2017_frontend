@@ -633,7 +633,7 @@ if ($settings['hash_salt']) {
  * configuration values in settings.php will not fire any of the configuration
  * change events.
  */
-# $config['system.site']['name'] = 'My Drupal site';
+$config['system.site']['name'] = 'Drupal day Rome 2017';
 # $config['system.theme']['default'] = 'stark';
 # $config['user.settings']['anonymous'] = 'Visitor';
 
@@ -751,9 +751,9 @@ $settings['file_scan_ignore_directories'] = [
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+ }
 $databases['default']['default'] = array (
   'database' => 'spark_dday2017',
   'username' => 'root',

@@ -1,0 +1,19 @@
+/*
+ * Custom style.
+ */
+
+.region {
+  border: 1px solid #E64135;
+  padding: 12px;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.layout-content {
+  float: left;
+  width: 75%;
+}
+.layout-sidebar-first {
+  float: right;
+  width: 25%;
+}
