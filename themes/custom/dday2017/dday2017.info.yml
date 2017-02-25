@@ -1,0 +1,10 @@
+name: Drupal day 2017 frontend theme
+type: theme
+description: Drupal day 2017 frontend theme DEMO
+package: SparkFabrik
+core: 8.x
+libraries:
+  - dday2017/global-styling
+
+base theme: bartik
+

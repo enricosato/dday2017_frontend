@@ -667,6 +667,7 @@ if ($settings['hash_salt']) {
 /**
  * Load services definition file.
  */
+$app_root = getcwd();
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 
 /**
