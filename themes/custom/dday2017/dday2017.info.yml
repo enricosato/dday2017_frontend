@@ -8,9 +8,9 @@ base theme: classy
 
 libraries:
   - dday2017/global-styling
-  - dday2017/slick-slider
+#  - dday2017/slick-slider
 
-libraries-override:
-  core/jquery:
-    js:
-      assets/vendor/jquery/jquery.min.js: false
+#libraries-override:
+#  core/jquery:
+#    js:
+#      assets/vendor/jquery/jquery.min.js: false
