@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains dday2017_twig_filter.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dday2017_twig_filter_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dday2017_twig_filter module.
+    case 'help.page.dday2017_twig_filter':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Twig custom filter') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dday2017_twig_filter_theme() {
+  $theme = [];
+
+  return $theme;
+}

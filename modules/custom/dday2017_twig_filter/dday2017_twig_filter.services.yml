@@ -1,0 +1,6 @@
+services:
+  dday2017_twig_filter.twig_extension:
+    arguments: ['@renderer']
+    class: Drupal\dday2017_twig_filter\TwigExtension\BoldUnderline
+    tags:
+      - { name: twig.extension }
