@@ -81,7 +81,7 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-{{ attach_library('dday2017/slick-slider') }}
+{#{ attach_library('dday2017/slick-slider') }#}
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -109,5 +109,27 @@
     {{ content|without('field_news_tag') }}
     #}
   </div>
+
+  {#
+    // Create link in twig templates.
+    // To find the route: 'drupal router:debug'
+  #}
+  {#
+  <br /><br /><br />
+  <strong>Link to the default frontpage (using path() ):</strong> <br />
+  <a href="{{ path('<front>') }}">{{ 'View frontpage'|t }}</a> <br />
+  <strong>Link to the default frontpage (using url() ):</strong> <br />
+  <a href="{{ url('<front>') }}">{{ 'View frontpage'|t }}</a> <br />
+
+  <br />
+  <strong>Link to a specific node page:</strong> <br />
+  <a href="{{ path('entity.node.canonical', {'node': '1'}) }}">{{ 'Read node 1'|t }}</a> <br />
+
+  <br />
+  <strong>Link to a specific user profile page:</strong> <br />
+  <a href="{{ path('entity.user.canonical', {'user': '1'}) }}">{{ 'View user profile admin'|t }}</a> <br />
+
+  #}
+
 
 </article>
