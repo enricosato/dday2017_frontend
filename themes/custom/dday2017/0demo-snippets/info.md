@@ -6,9 +6,4 @@ libraries-override:
   classy/base:
     css:
       component:
-        css/components/button.css: false
-
-libraries-override:
-  core/jquery:
-    js:
-      assets/vendor/jquery/jquery.min.js: false
+        css/components/breadcrumb.css: false
