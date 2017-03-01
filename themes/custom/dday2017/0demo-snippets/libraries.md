@@ -19,6 +19,7 @@ global-styling:
       css/style.css: {}
       css/ie.css: { browsers: { IE: 'IE', '!IE': false } }
       css/print.css: { media: print }
+# To see all parameters: http://www.bradwade.com/drupal8/D8-3-Libraries/
 
 
 
