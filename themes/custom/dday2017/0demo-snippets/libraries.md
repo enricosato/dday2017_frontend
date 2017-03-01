@@ -18,6 +18,7 @@ global-styling:
     theme:
       css/style.css: {}
       css/ie.css: { browsers: { IE: 'IE', '!IE': false } }
+      css/print.css: { media: print }
 
 
 
