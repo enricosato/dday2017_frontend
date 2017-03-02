@@ -1,5 +1,6 @@
 <?php
-
+global $app_root;
+global $site_path;
 /**
  * @file
  * Drupal site-specific configuration file.
@@ -667,7 +668,6 @@ $config['system.site']['name'] = 'Drupal day Rome 2017';
 /**
  * Load services definition file.
  */
-$app_root = getcwd();
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 
 /**
