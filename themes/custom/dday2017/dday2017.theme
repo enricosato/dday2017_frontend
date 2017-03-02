@@ -66,14 +66,12 @@ function dday2017_theme_suggestions_node_alter(array &$suggestions, array $varia
 
   }*/
 
-  /*
-
-  // Create custom suggestion for unpublished article node.
+  // Create custom suggestion for unpublished news node.
   $node = $variables['elements']['#node'];
-  if ($node->getType() == 'article' && !$node->isPublished()) {
+  if ($node->getType() == 'news' && !$node->isPublished()) {
     $suggestions[] = 'node__' . $node->getType() . '__' . $variables['elements']['#view_mode'] . '__' . 'unpublished';
   }
-  */
+
 }
 
 /**
