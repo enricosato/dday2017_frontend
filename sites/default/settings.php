@@ -1,6 +1,6 @@
 <?php
-global $app_root;
-global $site_path;
+//global $app_root;
+//global $site_path;
 /**
  * @file
  * Drupal site-specific configuration file.
@@ -668,7 +668,7 @@ $config['system.site']['name'] = 'Drupal day Rome 2017';
 /**
  * Load services definition file.
  */
-$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+$settings['container_yamls'][] = '/sites/default/services.yml';
 
 /**
  * Override the default service container class.
@@ -751,8 +751,8 @@ $settings['file_scan_ignore_directories'] = [
  * Keep this code block at the end of this file to take full effect.
  */
 #
- if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-   include $app_root . '/' . $site_path . '/settings.local.php';
+ if (file_exists('/sites/default/settings.local.php')) {
+   include '/sites/default/settings.local.php';
  }
 $databases['default']['default'] = array (
   'database' => 'spark_dday2017',
